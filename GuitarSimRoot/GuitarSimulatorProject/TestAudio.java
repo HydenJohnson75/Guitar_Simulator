@@ -60,7 +60,7 @@ public class TestAudio {
 
     public static void playAudio(String path)
     {
-        JFXPanel pan = new JFXPanel();
+        JFXPanel pan = new JFXPanel();   //Initialize the toolkit
 
 		/*Create a new Media object using the file path specified in the call to playAudio()
 		 this will become the audio clip object we wish to play*/
