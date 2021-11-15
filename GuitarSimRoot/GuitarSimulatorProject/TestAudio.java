@@ -22,37 +22,46 @@ public class TestAudio {
                 audioFile5 = "GuitarSounds/Clean E standard Notes/G#_Note.mp3", audioFile6 = "GuitarSounds/Clean E standard Notes/A_Note.mp3";
 
 
+        try {
+            while (userNumber != -1) {
+                userNumberString = JOptionPane.showInputDialog("Please enter the option you would like:\n\n1.Play E note" +
+                        "\n2.Play F note" + "\n3.Play F# note" + "\n4.Play G note" + "\n5.Play G# note" + "\n6.Play A note" +
+                        "\n-1.Exit");
+                userNumber = Integer.parseInt(userNumberString);
 
-        while(userNumber != -1){
-            userNumberString = JOptionPane.showInputDialog("Please enter the option you would like:\n\n1.Play E note" +
-                    "\n2.Play F note" + "\n3.Play F# note" + "\n4.Play G note" + "\n5.Play G# note" + "\n6.Play A note" +
-                    "\n-1.Exit");
-            userNumber = Integer.parseInt(userNumberString);
+                if (userNumber == 1) {
+                    playAudio(audioFile1);
+                }
+                if (userNumber == 2) {
+                    playAudio(audioFile2);
+                }
+                if (userNumber == 3) {
+                    playAudio(audioFile3);
+                }
+                if (userNumber == 4) {
+                    playAudio(audioFile4);
+                }
+                if (userNumber == 5) {
+                    playAudio(audioFile5);
+                }
+                if (userNumber == 6) {
+                    playAudio(audioFile6);
+                }
+                if (userNumber == -1) {
+                    break;
+                }
 
-            if(userNumber == 1){
-                playAudio(audioFile1);
-            }
-            if(userNumber == 2){
-                playAudio(audioFile2);
-            }
-            if(userNumber == 3){
-                playAudio(audioFile3);
-            }
-            if(userNumber == 4){
-                playAudio(audioFile4);
-            }
-            if(userNumber == 5){
-                playAudio(audioFile5);
-            }
-            if(userNumber == 6){
-                playAudio(audioFile6);
-            }
-            if(userNumber == -1){
-                break;
-            }
+                
 
+            }
 
         }
+
+       catch(Exception NumberFormatException){
+           JOptionPane.showMessageDialog(null,"Closing the program succesfully", "Closing",JOptionPane.INFORMATION_MESSAGE);
+
+           System.exit(0);
+       }
 
         System.exit(0);
     }
