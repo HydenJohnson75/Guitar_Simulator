@@ -9,6 +9,7 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import javafx.embed.swing.JFXPanel;
 
+
 public class TestAudio {
     static MediaPlayer mediaPlayer;
 
@@ -16,9 +17,9 @@ public class TestAudio {
         int userNumber=0;
         String userNumberString;
 
-        String audioFile1 = "F:/Mini project stuff/Guitar Simulator/GuitarSounds/Clean E standard Notes/E_Note.mp3", audioFile2 = "F:/Mini project stuff/Guitar Simulator/GuitarSounds/Clean E standard Notes/F_Note.mp3",
-                audioFile3 = "F:/Mini project stuff/Guitar Simulator/GuitarSounds/Clean E standard Notes/F#_Note.mp3", audioFile4 = "F:/Mini project stuff/Guitar Simulator/GuitarSounds/Clean E standard Notes/G_Note.mp3",
-                audioFile5 = "F:/Mini project stuff/Guitar Simulator/GuitarSounds/Clean E standard Notes/G#_Note.mp3", audioFile6 = "F:/Mini project stuff/Guitar Simulator/GuitarSounds/Clean E standard Notes/A_Note.mp3";
+        String audioFile1 = "GuitarSounds/Clean E standard Notes/E_Note.mp3", audioFile2 = "GuitarSounds/Clean E standard Notes/F_Note.mp3",
+                audioFile3 = "GuitarSounds/Clean E standard Notes/F#_Note.mp3", audioFile4 = "GuitarSounds/Clean E standard Notes/G_Note.mp3",
+                audioFile5 = "GuitarSounds/Clean E standard Notes/G#_Note.mp3", audioFile6 = "GuitarSounds/Clean E standard Notes/A_Note.mp3";
 
 
 
