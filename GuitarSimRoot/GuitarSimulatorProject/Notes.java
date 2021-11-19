@@ -1,10 +1,21 @@
 package GuitarSimulatorProject;
 
 public class Notes {
-    String audioFile1 = "GuitarSounds/Clean E standard Notes/E_Note.mp3";
-    String audioFile2 = "GuitarSounds/Clean E standard Notes/F_Note.mp3";
-    String audioFile3 = "GuitarSounds/Clean E standard Notes/F#_Note.mp3";
-    String audioFile4 = "GuitarSounds/Clean E standard Notes/G_Note.mp3";
+    private String audioFile1 = "GuitarSounds/Clean E standard Notes/E_Note.mp3";
+    private String audioFile2 = "GuitarSounds/Clean E standard Notes/F_Note.mp3";
+    private String audioFile3 = "GuitarSounds/Clean E standard Notes/F#_Note.mp3";
+    private String audioFile4 = "GuitarSounds/Clean E standard Notes/G_Note.mp3";
+    private String audioFile5 = "GuitarSounds/Clean E standard Notes/G#_Note.mp3";
+    private String audioFile6 = "GuitarSounds/Clean E standard Notes/A_Note.mp3";
+
+    public Notes(String audioFile1, String audioFile2, String audioFile3, String audioFile4, String audioFile5, String audioFile6) {
+        this.audioFile1 = audioFile1;
+        this.audioFile2 = audioFile2;
+        this.audioFile3 = audioFile3;
+        this.audioFile4 = audioFile4;
+        this.audioFile5 = audioFile5;
+        this.audioFile6 = audioFile6;
+    }
 
     public String getAudioFile1() {
         return audioFile1;
@@ -54,6 +65,5 @@ public class Notes {
         this.audioFile6 = audioFile6;
     }
 
-    String audioFile5 = "GuitarSounds/Clean E standard Notes/G#_Note.mp3";
-    String audioFile6 = "GuitarSounds/Clean E standard Notes/A_Note.mp3";
+
 }
