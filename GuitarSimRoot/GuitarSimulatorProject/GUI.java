@@ -165,157 +165,157 @@ public class GUI extends JFrame implements WindowListener, ActionListener, Mouse
         //////6th String
         if ((mouseX > 12 && mouseX < 99) && (mouseY > 796 && mouseY < 826)) {
             System.out.println("Open String (E) Low E String");
-            playAudio("GuitarSounds/Metal E standard Notes/Low E String/E_Note.mp3");
+            playAudio(n1.setAudioFile1(userSelectedGenre));
         }
         if ((mouseX > 128 && mouseX < 468) && (mouseY > 796 && mouseY < 826)) {
             System.out.println("First Fret (F) Low E String");
-            playAudio(n1.audioFile2);
+            playAudio(n1.setAudioFile2(userSelectedGenre));
         }
         if ((mouseX > 481 && mouseX < 856) && (mouseY > 796 && mouseY < 826)) {
             System.out.println("Second Fret (F#) Low E String");
-            playAudio("");
+            playAudio(n1.setAudioFile3(userSelectedGenre));
         }
         if ((mouseX > 868 && mouseX < 1285) && (mouseY > 796 && mouseY < 826)) {
             System.out.println("Third Fret (G) Low E String");
-            playAudio("");
+            playAudio(n1.setAudioFile4(userSelectedGenre));
         }
         if ((mouseX > 1297 && mouseX < 1603) && (mouseY > 796 && mouseY < 826)) {
             System.out.println("Fourth Fret (G#) Low E String");
-            playAudio("");
+            playAudio(n1.setAudioFile5(userSelectedGenre));
         }
         if ((mouseX > 1612 && mouseX < 1920) && (mouseY > 796 && mouseY < 826)) {
             System.out.println("Fifth Fret (A) Low E String");
-            playAudio("");
+            playAudio(n1.setAudioFile6(userSelectedGenre));
         }
 
         //////5th String
         if ((mouseX > 12 && mouseX < 99) && (mouseY > 690 && mouseY < 735)) {
             System.out.println("Open String (A) A String");
-            playAudio("");
+            playAudio(n1.setAudioFile7(userSelectedGenre));
         }
         if ((mouseX > 128 && mouseX < 468) && (mouseY > 690 && mouseY < 735)) {
             System.out.println("First Fret (F) A String");
-            playAudio("");
+            playAudio(n1.setAudioFile8(userSelectedGenre));
         }
         if ((mouseX > 481 && mouseX < 856) && (mouseY > 690 && mouseY < 735)) {
             System.out.println("Second Fret (F#) A String");
-            playAudio("");
+            playAudio(n1.setAudioFile9(userSelectedGenre));
         }
         if ((mouseX > 868 && mouseX < 1285) && (mouseY > 690 && mouseY < 735)) {
             System.out.println("Third Fret (G) A String");
-            playAudio("");
+            playAudio(n1.setAudioFile10(userSelectedGenre));
         }
         if ((mouseX > 1297 && mouseX < 1603) && (mouseY > 690 && mouseY < 735)) {
             System.out.println("Fourth Fret (G#) A String");
-            playAudio("");
+            playAudio(n1.setAudioFile11(userSelectedGenre));
         }
         if ((mouseX > 1612 && mouseX < 1920) && (mouseY > 690 && mouseY < 735)) {
             System.out.println("Fifth Fret (A) A String");
-            playAudio("");
+            playAudio(n1.setAudioFile12(userSelectedGenre));
         }
 
         //////4th String
         if ((mouseX > 12 && mouseX < 99) && (mouseY > 590 && mouseY < 628)) {
             System.out.println("Open String (D) D String");
-            playAudio("");
+            playAudio(n1.setAudioFile13(userSelectedGenre));
         }
         if ((mouseX > 128 && mouseX < 468) && (mouseY > 590 && mouseY < 628)) {
             System.out.println("First Fret (F) D String");
-            playAudio("");
+            playAudio(n1.setAudioFile14(userSelectedGenre));
         }
         if ((mouseX > 481 && mouseX < 856) && (mouseY > 590 && mouseY < 628)) {
             System.out.println("Second Fret (F#) D String");
-            playAudio("");
+            playAudio(n1.setAudioFile15(userSelectedGenre));
         }
         if ((mouseX > 868 && mouseX < 1285) && (mouseY > 590 && mouseY < 628)) {
             System.out.println("Third Fret (G) D String");
-            playAudio("");
+            playAudio(n1.setAudioFile16(userSelectedGenre));
         }
         if ((mouseX > 1297 && mouseX < 1603) && (mouseY > 590 && mouseY < 628)) {
             System.out.println("Fourth Fret (G#) D String");
-            playAudio("");
+            playAudio(n1.setAudioFile17(userSelectedGenre));
         }
         if ((mouseX > 1612 && mouseX < 1920) && (mouseY > 590 && mouseY < 628)) {
             System.out.println("Fifth Fret (A) D String");
-            playAudio("");
+            playAudio(n1.setAudioFile18(userSelectedGenre));
         }
 
         //////3rd String
         if ((mouseX > 12 && mouseX < 99) && (mouseY > 479 && mouseY < 516)) {
             System.out.println("Open String (G) G String");
-            playAudio("");
+            playAudio(n1.setAudioFile19(userSelectedGenre));
         }
         if ((mouseX > 128 && mouseX < 468) && (mouseY > 479 && mouseY < 516)) {
             System.out.println("First Fret (F) G String");
-            playAudio("");
+            playAudio(n1.setAudioFile20(userSelectedGenre));
         }
         if ((mouseX > 481 && mouseX < 856) && (mouseY > 479 && mouseY < 516)) {
             System.out.println("Second Fret (F#) G String");
-            playAudio("");
+            playAudio(n1.setAudioFile21(userSelectedGenre));
         }
         if ((mouseX > 868 && mouseX < 1285) && (mouseY > 479 && mouseY < 516)) {
             System.out.println("Third Fret (G) G String");
-            playAudio("");
+            playAudio(n1.setAudioFile22(userSelectedGenre));
         }
         if ((mouseX > 1297 && mouseX < 1603) && (mouseY > 479 && mouseY < 516)) {
             System.out.println("Fourth Fret (G#) G String");
-            playAudio("");
+            playAudio(n1.setAudioFile23(userSelectedGenre));
         }
         if ((mouseX > 1612 && mouseX < 1920) && (mouseY > 479 && mouseY < 516)) {
             System.out.println("Fifth Fret (A) G String");
-            playAudio("");
+            playAudio(n1.setAudioFile24(userSelectedGenre));
         }
 
         //////2nd String
         if ((mouseX > 12 && mouseX < 99) && (mouseY > 380 && mouseY < 416)) {
             System.out.println("Open String (B) B String");
-            playAudio("");
+            playAudio(n1.setAudioFile25(userSelectedGenre));
         }
         if ((mouseX > 128 && mouseX < 468) && (mouseY > 380 && mouseY < 416)) {
             System.out.println("First Fret (F) B String");
-            playAudio("");
+            playAudio(n1.setAudioFile26(userSelectedGenre));
         }
         if ((mouseX > 481 && mouseX < 856) && (mouseY > 380 && mouseY < 416)) {
             System.out.println("Second Fret (F#) B String");
-            playAudio("");
+            playAudio(n1.setAudioFile27(userSelectedGenre));
         }
         if ((mouseX > 868 && mouseX < 1285) && (mouseY > 380 && mouseY < 416)) {
             System.out.println("Third Fret (G) B String");
-            playAudio("");
+            playAudio(n1.setAudioFile28(userSelectedGenre));
         }
         if ((mouseX > 1297 && mouseX < 1603) && (mouseY > 380 && mouseY < 416)) {
             System.out.println("Fourth Fret (G#) B String");
-            playAudio("");
+            playAudio(n1.setAudioFile29(userSelectedGenre));
         }
         if ((mouseX > 1612 && mouseX < 1920) && (mouseY > 380 && mouseY < 416)) {
             System.out.println("Fifth Fret (A) B String");
-            playAudio("");
+            playAudio(n1.setAudioFile30(userSelectedGenre));
         }
 
         //////1st String
         if ((mouseX > 12 && mouseX < 99) && (mouseY > 277 && mouseY < 311)) {
             System.out.println("Open String (E) High E String");
-            playAudio("");
+            playAudio(n1.setAudioFile31(userSelectedGenre));
         }
         if ((mouseX > 128 && mouseX < 468) && (mouseY > 277 && mouseY < 311)) {
             System.out.println("First Fret (F) High E String");
-            playAudio("");
+            playAudio(n1.setAudioFile32(userSelectedGenre));
         }
         if ((mouseX > 481 && mouseX < 856) && (mouseY > 277 && mouseY < 311)) {
             System.out.println("Second Fret (F#) High E String");
-            playAudio("");
+            playAudio(n1.setAudioFile33(userSelectedGenre));
         }
         if ((mouseX > 868 && mouseX < 1285) && (mouseY > 277 && mouseY < 311)) {
             System.out.println("Third Fret (G) High E String");
-            playAudio("");
+            playAudio(n1.setAudioFile34(userSelectedGenre));
         }
         if ((mouseX > 1297 && mouseX < 1603) && (mouseY > 277 && mouseY < 311)) {
             System.out.println("Fourth Fret (G#) High E String");
-            playAudio("");
+            playAudio(n1.setAudioFile35(userSelectedGenre));
         }
         if ((mouseX > 1612 && mouseX < 1920) && (mouseY > 277 && mouseY < 311)) {
             System.out.println("Fifth Fret (A) High E String");
-            playAudio("");
+            playAudio(n1.setAudioFile36(userSelectedGenre));
         }
 
         System.out.println(mouseX + "   " + mouseY);

@@ -4,10 +4,7 @@ public class Notes {
 
 
     String audioFile1 = "";
-
-
-
-    String audioFile2 = setAudioFile2();
+    String audioFile2 = "";
     String audioFile3 = "";
     String audioFile4 = "";
     String audioFile5 = "";
@@ -44,9 +41,20 @@ public class Notes {
     String audioFile36 = "";
 
 
-    public static String setAudioFile2() {
+    public static String setAudioFile1(String genre) {
         String sound = "";
-        String genre = TestGUI.findGenre();
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/E standard Notes/Low E String/E_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+
+        return sound;
+    }
+
+    public static String setAudioFile2(String genre) {
+        String sound = "";
 
         if(genre == "Metal")
         sound += "GuitarSounds/Metal E standard Notes/Low E String/F_Note.mp3";
@@ -55,9 +63,378 @@ public class Notes {
         }
         return sound;
     }
+    public static String setAudioFile3(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/Low E String/F#_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+    public static String setAudioFile4(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/Low E String/G_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+    public static String setAudioFile5(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/Low E String/G#_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+    public static String setAudioFile6(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/Low E String/A_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+    public static String setAudioFile7(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/A String/A_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile8(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/A String/A#_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile9(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/A String/B_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile10(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/A String/C_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile11(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/A String/C#_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile12(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/A String/D_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile13(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/D String/D_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile14(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/D String/D#_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile15(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/D String/E_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile16(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/D String/F_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile17(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/D String/F#_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile18(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/D String/G_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile19(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/G String/G_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile20(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/G String/G#_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile21(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/G String/A_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile22(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/G String/A#_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile23(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/G String/B_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile24(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/G String/C_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile25(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/B String/B_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile26(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/B String/C_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile27(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/B String/C#_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile28(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/B String/D_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile29(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/B String/D#_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile30(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/B String/E_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile31(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/High E String/E_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile32(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/High E String/F_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile33(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/High E String/F#_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile34(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/High E String/G_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+    public static String setAudioFile35(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/High E String/G#_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
+
+    public static String setAudioFile36(String genre) {
+        String sound = "";
+
+        if(genre == "Metal")
+            sound += "GuitarSounds/Metal E standard Notes/High E String/A_Note.mp3";
+        else{
+            System.out.println("working");
+        }
+        return sound;
+    }
 
 
-    public void passNote(){
+
+
 
 
 
@@ -105,7 +482,7 @@ public class Notes {
 //            audioFile36 += "GuitarSounds/Metal E standard Notes/High E String/A_Note.mp3";
 //        }
     }
-}
+
 
 
 
