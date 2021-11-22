@@ -21,7 +21,5 @@ public class TestGUI {
 
     }
 
-    public static String findGenre(){
-        return userSelectedGenre;
-    }
+
 }
