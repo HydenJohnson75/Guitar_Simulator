@@ -40,40 +40,55 @@ public class Notes {
     String audioFile35 = "";
     String audioFile36 = "";
 
+    public static String setCurrentTuning(String tuning){
+        String str = "";
+
+        if(tuning == "E Standard"){
+            str += "E Standard";
+        }
+        if(tuning == "D Standard"){
+            str += "D Standard";
+        }
+        if(tuning == "Drop C"){
+            str += "Drop C";
+        }
+
+        return str;
+    }
 
     public static String setAudioFile1(String genre, String tuning) {
         String sound = "";
 
         if (genre == "Metal") {
-            if (tuning == "E Standard"){
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/Low E String/E_Note.mp3";
             }
-            if(tuning == "D Standard"){
+            if (tuning == "D Standard") {
                 sound += "GuitarSounds/Metal D standard Notes/Low D String/D_Note.mp3";
             }
-            if(tuning == "Drop C"){
+            if (tuning == "Drop C") {
                 sound += "GuitarSounds/Metal Drop C Notes/Low C String/C_Note.mp3";
             }
         }
         if (genre == "Jazz") {
-            if (tuning == "E Standard"){
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Jazz E standard Notes/Low E String/E_Note.mp3";
             }
-            if(tuning == "D Standard"){
+            if (tuning == "D Standard") {
                 sound += "GuitarSounds/Jazz D standard Notes/Low D String/D_Note.mp3";
             }
-            if(tuning == "Drop C"){
+            if (tuning == "Drop C") {
                 sound += "GuitarSounds/Jazz Drop C Notes/Low C String/C_Note.mp3";
             }
         }
         if (genre == "Pop") {
-            if (tuning == "E Standard"){
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Clean E standard Notes/Low E String/E_Note.mp3";
             }
-            if(tuning == "D Standard"){
+            if (tuning == "D Standard") {
                 sound += "GuitarSounds/Clean D standard Notes/Low D String/D_Note.mp3";
             }
-            if(tuning == "Drop C"){
+            if (tuning == "Drop C") {
                 sound += "GuitarSounds/Clean Drop C Notes/Low C String/C_Note.mp3";
             }
         }
@@ -84,36 +99,36 @@ public class Notes {
     public static String setAudioFile2(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/Low E String/F_Note.mp3";
             }
-            if(tuning == "D Standard"){
+            if (tuning == "D Standard") {
                 sound += "GuitarSounds/Metal D standard Notes/Low D String/D#_Note.mp3";
             }
-            if(tuning == "Drop C"){
+            if (tuning == "Drop C") {
                 sound += "GuitarSounds/Metal Drop C Notes/Low C String/C#_Note.mp3";
             }
         }
-        if (genre == "Jazz"){
-            if (tuning == "E Standard"){
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Jazz E standard Notes/Low E String/F_Note.mp3";
             }
-            if(tuning == "D Standard"){
+            if (tuning == "D Standard") {
                 sound += "GuitarSounds/Jazz D standard Notes/Low D String/D#_Note.mp3";
             }
-            if(tuning == "Drop C"){
+            if (tuning == "Drop C") {
                 sound += "GuitarSounds/Jazz Drop C Notes/Low C String/C#_Note.mp3";
             }
         }
-        if (genre == "Pop"){
-            if (tuning == "E Standard"){
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Clean E standard Notes/Low E String/F_Note.mp3";
             }
-            if(tuning == "D Standard"){
+            if (tuning == "D Standard") {
                 sound += "GuitarSounds/Clean D standard Notes/Low D String/D#_Note.mp3";
             }
-            if(tuning == "Drop C"){
+            if (tuning == "Drop C") {
                 sound += "GuitarSounds/Clean Drop C Notes/Low C String/C#_Note.mp3";
             }
         }
@@ -124,36 +139,36 @@ public class Notes {
     public static String setAudioFile3(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/Low E String/F#_Note.mp3";
             }
-            if(tuning == "D Standard"){
+            if (tuning == "D Standard") {
                 sound += "GuitarSounds/Metal D standard Notes/Low D String/E_Note.mp3";
             }
-            if(tuning == "Drop C"){
+            if (tuning == "Drop C") {
                 sound += "GuitarSounds/Metal Drop C Notes/Low C String/D_Note.mp3";
             }
         }
-        if (genre == "Jazz"){
-            if (tuning == "E Standard"){
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Jazz E standard Notes/Low E String/F#_Note.mp3";
             }
-            if(tuning == "D Standard"){
+            if (tuning == "D Standard") {
                 sound += "GuitarSounds/Jazz D standard Notes/Low D String/E_Note.mp3";
             }
-            if(tuning == "Drop C"){
+            if (tuning == "Drop C") {
                 sound += "GuitarSounds/Jazz Drop C Notes/Low C String/D_Note.mp3";
             }
         }
-        if (genre == "Pop"){
-            if (tuning == "E Standard"){
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Clean E standard Notes/Low E String/F#_Note.mp3";
             }
-            if(tuning == "D Standard"){
+            if (tuning == "D Standard") {
                 sound += "GuitarSounds/Clean D standard Notes/Low D String/E_Note.mp3";
             }
-            if(tuning == "Drop C"){
+            if (tuning == "Drop C") {
                 sound += "GuitarSounds/Clean Drop C Notes/Low C String/D_Note.mp3";
             }
         }
@@ -164,15 +179,37 @@ public class Notes {
     public static String setAudioFile4(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/Low E String/G_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/Low D String/F_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/Low C String/D#_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/Low E String/G_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/Low D String/F_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/Low C String/D#_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/Low E String/G_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/Low D String/F_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/Low C String/D#_Note.mp3";
             }
         }
 
@@ -184,14 +221,36 @@ public class Notes {
         String sound = "";
 
         if (genre == "Metal") {
-            if (tuning == "E Standard"){
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/Low E String/G#_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/Low D String/F#_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/Low C String/E_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/Low E String/G#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/Low D String/F#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/Low C String/E_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/Low E String/G#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/Low D String/F#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/Low C String/E_Note.mp3";
             }
         }
 
@@ -201,15 +260,37 @@ public class Notes {
     public static String setAudioFile6(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/Low E String/A_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/Low D String/G_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/Low C String/F_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/Low E String/A_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/Low D String/G_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/Low C String/F_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/Low E String/A_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/Low D String/G_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/Low C String/F_Note.mp3";
             }
         }
 
@@ -219,15 +300,37 @@ public class Notes {
     public static String setAudioFile7(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/A String/A_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/G String/G_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/G String/G_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/A String/A_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/G String/G_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/G String/G_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/A String/A_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/G String/G_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/G String/G_Note.mp3";
             }
         }
 
@@ -237,15 +340,37 @@ public class Notes {
     public static String setAudioFile8(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/A String/A#_Note.mp3";
             }
-                if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/G String/G#_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/G String/G#_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/A String/A#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/G String/G#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/G String/G#_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/A String/A#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/G String/G#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/G String/G#_Note.mp3";
             }
         }
 
@@ -255,15 +380,37 @@ public class Notes {
     public static String setAudioFile9(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/A String/B_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/G String/A_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/G String/A_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/A String/B_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/G String/A_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/G String/A_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/A String/B_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/G String/A_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/G String/A_Note.mp3";
             }
         }
 
@@ -273,15 +420,37 @@ public class Notes {
     public static String setAudioFile10(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/A String/C_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/G String/A#_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/G String/A#_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/A String/C_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/G String/A#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/G String/A#_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/A String/C_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/G String/A#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/G String/A#_Note.mp3";
             }
         }
 
@@ -291,15 +460,37 @@ public class Notes {
     public static String setAudioFile11(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/A String/C#_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/G String/B_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/G String/B_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/A String/C#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/G String/B_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/G String/B_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/A String/C#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/G String/B_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/G String/B_Note.mp3";
             }
         }
 
@@ -309,15 +500,37 @@ public class Notes {
     public static String setAudioFile12(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/A String/D_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/G String/C_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/G String/C_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/A String/D_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/G String/C_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/G String/C_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/A String/D_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/G String/C_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/G String/C_Note.mp3";
             }
         }
 
@@ -327,15 +540,37 @@ public class Notes {
     public static String setAudioFile13(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/D String/D_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/C String/C_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/High C String/C_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/D String/D_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/C String/C_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/High C String/C_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/D String/D_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/C String/C_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/High C String/C_Note.mp3";
             }
         }
 
@@ -345,15 +580,37 @@ public class Notes {
     public static String setAudioFile14(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/D String/D#_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/C String/C#_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/High C String/C#_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/D String/D#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/C String/C#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/High C String/C#_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/D String/D#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/C String/C#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/High C String/C#_Note.mp3";
             }
         }
 
@@ -363,17 +620,40 @@ public class Notes {
     public static String setAudioFile15(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/D String/E_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/C String/D_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/High C String/D_Note.mp3";
             }
         }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/D String/E_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/C String/D_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/High C String/D_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/D String/E_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/C String/D_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/High C String/D_Note.mp3";
+            }
+        }
+
 
         return sound;
     }
@@ -381,15 +661,37 @@ public class Notes {
     public static String setAudioFile16(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/D String/F_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/C String/D#_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/High C String/D#_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/D String/F_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/C String/D#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/High C String/D#_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/D String/F_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/C String/D#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/High C String/D#_Note.mp3";
             }
         }
 
@@ -399,15 +701,37 @@ public class Notes {
     public static String setAudioFile17(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/D String/F#_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/C String/E_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/High C String/E_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/D String/F#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/C String/E_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/High C String/E_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/D String/F#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/C String/E_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/High C String/E_Note.mp3";
             }
         }
 
@@ -417,15 +741,37 @@ public class Notes {
     public static String setAudioFile18(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/D String/G_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/C String/F_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/High C String/F_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/D String/G_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/C String/F_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/High C String/F_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/D String/G_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/C String/F_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/High C String/F_Note.mp3";
             }
         }
 
@@ -435,15 +781,37 @@ public class Notes {
     public static String setAudioFile19(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/G String/G_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/F String/F_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/F String/F_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/G String/G_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/F String/F_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/F String/F_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/G String/G_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/F String/F_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/F String/F_Note.mp3";
             }
         }
 
@@ -453,15 +821,37 @@ public class Notes {
     public static String setAudioFile20(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/G String/G#_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/F String/F#_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/F String/F#_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/G String/G#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/F String/F#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/F String/F#_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/G String/G#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/F String/F#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/F String/F#_Note.mp3";
             }
         }
 
@@ -471,15 +861,37 @@ public class Notes {
     public static String setAudioFile21(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/G String/A_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/F String/G_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/F String/G_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/G String/A_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/F String/G_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/F String/G_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/G String/A_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/F String/G_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/F String/G_Note.mp3";
             }
         }
 
@@ -489,15 +901,37 @@ public class Notes {
     public static String setAudioFile22(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/G String/A#_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/F String/G#_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/F String/G#_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/G String/A#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/F String/G#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/F String/G#_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/G String/A#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/F String/G#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/F String/G#_Note.mp3";
             }
         }
 
@@ -507,15 +941,37 @@ public class Notes {
     public static String setAudioFile23(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/G String/B_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/F String/A_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/F String/A_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/G String/B_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/F String/A_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/F String/A_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/G String/B_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/F String/A_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/F String/A_Note.mp3";
             }
         }
 
@@ -525,15 +981,37 @@ public class Notes {
     public static String setAudioFile24(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/G String/C_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/F String/A#_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/F String/A#_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/G String/C_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/F String/A#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/F String/A#_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/G String/C_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/F String/A#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/F String/A#_Note.mp3";
             }
         }
 
@@ -543,15 +1021,37 @@ public class Notes {
     public static String setAudioFile25(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/B String/B_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/A String/A_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/A String/A_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/B String/B_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/A String/A_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/A String/A_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/B String/B_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/A String/A_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/A String/A_Note.mp3";
             }
         }
 
@@ -561,15 +1061,37 @@ public class Notes {
     public static String setAudioFile26(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/B String/C_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/A String/A#_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/A String/A#_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/B String/C_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/A String/A#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/A String/A#_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/B String/C_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/A String/A#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/A String/A#_Note.mp3";
             }
         }
 
@@ -579,15 +1101,37 @@ public class Notes {
     public static String setAudioFile27(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/B String/C#_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/A String/B_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/A String/B_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/B String/C#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/A String/B_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/A String/B_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/B String/C#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/A String/B_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/A String/B_Note.mp3";
             }
         }
 
@@ -597,15 +1141,37 @@ public class Notes {
     public static String setAudioFile28(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/B String/D_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/A String/C_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/A String/C_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/B String/D_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/A String/C_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/A String/C_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/B String/D_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/A String/C_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/A String/C_Note.mp3";
             }
         }
 
@@ -615,15 +1181,37 @@ public class Notes {
     public static String setAudioFile29(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/B String/D#_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/A String/C#_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/A String/C#_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/B String/D#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/A String/C#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/A String/C#_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/B String/D#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/A String/C#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/A String/C#_Note.mp3";
             }
         }
 
@@ -633,15 +1221,37 @@ public class Notes {
     public static String setAudioFile30(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/B String/E_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/A String/D_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/A String/D_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/B String/E_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/A String/D_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/A String/D_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/B String/E_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/A String/D_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/A String/D_Note.mp3";
             }
         }
 
@@ -651,15 +1261,37 @@ public class Notes {
     public static String setAudioFile31(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/High E String/E_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/High D String/D_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/D String/D_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/High E String/E_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/High D String/D_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/D String/D_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/High E String/E_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/High D String/D_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/D String/D_Note.mp3";
             }
         }
 
@@ -669,15 +1301,37 @@ public class Notes {
     public static String setAudioFile32(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/High E String/F_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/High D String/D#_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/D String/D#_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/High E String/F_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/High D String/D#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/D String/D#_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/High E String/F_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/High D String/D#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/D String/D#_Note.mp3";
             }
         }
 
@@ -687,15 +1341,37 @@ public class Notes {
     public static String setAudioFile33(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/High E String/F#_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/High D String/E_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/D String/E_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/High E String/F#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/High D String/E_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/D String/E_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/High E String/F#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/High D String/E_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/D String/E_Note.mp3";
             }
         }
 
@@ -705,15 +1381,37 @@ public class Notes {
     public static String setAudioFile34(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/High E String/G_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/High D String/F_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/D String/F_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/High E String/G_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/High D String/F_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/D String/F_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/High E String/G_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/High D String/F_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/D String/F_Note.mp3";
             }
         }
 
@@ -723,15 +1421,37 @@ public class Notes {
     public static String setAudioFile35(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/High E String/G#_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/High D String/F#_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/D String/F#_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/High E String/G#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/High D String/F#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/D String/F#_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/High E String/G#_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/High D String/F#_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/D String/F#_Note.mp3";
             }
         }
 
@@ -741,20 +1461,40 @@ public class Notes {
     public static String setAudioFile36(String genre, String tuning) {
         String sound = "";
 
-        if (genre == "Metal"){
-            if (tuning == "E Standard"){
+        if (genre == "Metal") {
+            if (tuning == "E Standard") {
                 sound += "GuitarSounds/Metal E standard Notes/High E String/A_Note.mp3";
             }
-            if(tuning == "D Standard"){
-
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Metal D standard Notes/High D String/G_Note.mp3";
             }
-            if(tuning == "Drop C"){
-
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Metal Drop C Notes/D String/G_Note.mp3";
+            }
+        }
+        if (genre == "Jazz") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Jazz E standard Notes/High E String/A_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Jazz D standard Notes/High D String/G_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Jazz Drop C Notes/D String/G_Note.mp3";
+            }
+        }
+        if (genre == "Pop") {
+            if (tuning == "E Standard") {
+                sound += "GuitarSounds/Clean E standard Notes/High E String/A_Note.mp3";
+            }
+            if (tuning == "D Standard") {
+                sound += "GuitarSounds/Clean D standard Notes/High D String/G_Note.mp3";
+            }
+            if (tuning == "Drop C") {
+                sound += "GuitarSounds/Clean Drop C Notes/D String/G_Note.mp3";
             }
         }
 
         return sound;
     }
 }
-
-

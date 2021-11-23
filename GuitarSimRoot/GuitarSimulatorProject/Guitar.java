@@ -20,8 +20,8 @@ public class Guitar {
 
         }
         public Guitar(String model, String genre) {
-                this.model = getModel();
-                this.genre = getGenre();
+                setModel(model);
+                setGenre(genre);
         }
 
         public String getModel() {
@@ -42,6 +42,6 @@ public class Guitar {
 
         @Override
         public String toString() {
-                return "The genre that you chose was: "+ getGenre() + " The model of guitar for this genre " + getModel();
+                return "The genre that you chose was: "+ getGenre() + "\nThe model of guitar for this genre is: " + getModel();
         }
 }
