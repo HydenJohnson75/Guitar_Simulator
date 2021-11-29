@@ -9,8 +9,10 @@ public class StartWindow extends JFrame implements ActionListener {
 
     private JComboBox genreComboBox;
     private JComboBox tuningComboBox;
+    private String userGenre;
+    private String userTuning;
 
-    public StartWindow(){
+    public StartWindow() {
 
         super("Welcome Page");
         BorderLayout layout = new BorderLayout();
@@ -26,10 +28,9 @@ public class StartWindow extends JFrame implements ActionListener {
         tuningLabel.setText("What tuning would you like to start off with: ");
 
 
-
         JButton welcomeButton = new JButton();
         welcomeButton.setPreferredSize(new Dimension(300, 80));
-        welcomeButton.setFont(new Font("serif", Font.BOLD,30));
+        welcomeButton.setFont(new Font("serif", Font.BOLD, 30));
         welcomeButton.setText("Let's Go");
         welcomeButton.addActionListener(this);
 
@@ -65,15 +66,15 @@ public class StartWindow extends JFrame implements ActionListener {
 
         add(panel, BorderLayout.CENTER);
         setLocationRelativeTo(null);    //Line of code received from URL:https://www.tutorialspoint.com/how-to-display-a-jframe-to-the-center-of-a-screen-in-java, Author: Raja
-        setSize(400,300);
+        setSize(400, 300);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
         setVisible(true);
     }
 
-    public void createGenreComboBox(){
+    public void createGenreComboBox() {
 
-        String genres[] = new String[3];
+        String[] genres = new String[3];
 
         genres[0] = "Metal";
         genres[1] = "Jazz";
@@ -87,9 +88,9 @@ public class StartWindow extends JFrame implements ActionListener {
         genreComboBox.setSelectedIndex(0);
     }
 
-    public void createTuningComboBox(){
+    public void createTuningComboBox() {
 
-        String tunings[] = new String[3];
+        String[] tunings = new String[3];
 
         tunings[0] = "E Standard";
         tunings[1] = "D Standard";
@@ -105,10 +106,12 @@ public class StartWindow extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        System.out.println(genreComboBox.getSelectedItem());
-        System.out.println(tuningComboBox.getSelectedItem());
-        dispose();
-        GUI gui = new GUI();
-    }
+        userGenre = genreComboBox.getSelectedItem().toString();
+        System.out.println(userGenre);
 
+        userTuning = tuningComboBox.getSelectedItem().toString();
+        System.out.println(userTuning);
+        dispose();
+        GUI gui = new GUI(userGenre, userTuning);
+    }
 }

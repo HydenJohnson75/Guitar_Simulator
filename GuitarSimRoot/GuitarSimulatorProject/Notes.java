@@ -40,16 +40,16 @@ public class Notes {
     String audioFile35 = "";
     String audioFile36 = "";
 
-    public static String setCurrentTuning(String tuning){
+    public static String setCurrentTuning(String tuning) {
         String str = "";
 
-        if(tuning == "E Standard"){
+        if (tuning == "E Standard") {
             str += "E Standard";
         }
-        if(tuning == "D Standard"){
+        if (tuning == "D Standard") {
             str += "D Standard";
         }
-        if(tuning == "Drop C"){
+        if (tuning == "Drop C") {
             str += "Drop C";
         }
 
