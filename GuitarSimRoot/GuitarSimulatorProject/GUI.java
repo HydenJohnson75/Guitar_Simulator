@@ -16,11 +16,11 @@ import java.io.File;
 public class GUI extends JFrame implements ActionListener, MouseListener {
 
     private static MediaPlayer mediaPlayer;
-    private static String userSelectedTuning;
+    private String userSelectedTuning;
     private final ImageIcon guitarImage = new ImageIcon("Images/Guitar_fretboard.png");
     private final JLabel guitar = new JLabel();
     private final Notes n1 = new Notes();
-    private final JLabel currentTuning;
+    private JLabel currentTuning;
     private final JLabel currentGenre;
     private final String userGenre;
     private final JPanel topPanel;
@@ -135,13 +135,13 @@ public class GUI extends JFrame implements ActionListener, MouseListener {
         allGuitars[1] = jazzGuitar;
         allGuitars[2] = popGuitar;
 
-        if (userGenre == "Metal") {
+        if (userGenre.equals("Metal")) {
             JOptionPane.showMessageDialog(null, allGuitars[0], "Guitar Details", JOptionPane.INFORMATION_MESSAGE);
         }
-        if (userGenre == "Jazz") {
+        if (userGenre.equals("Jazz")) {
             JOptionPane.showMessageDialog(null, allGuitars[1], "Guitar Details", JOptionPane.INFORMATION_MESSAGE);
         }
-        if (userGenre == "Pop") {
+        if (userGenre.equals("Pop")) {
             JOptionPane.showMessageDialog(null, allGuitars[2], "Guitar Details", JOptionPane.INFORMATION_MESSAGE);
         }
 
@@ -234,36 +234,57 @@ public class GUI extends JFrame implements ActionListener, MouseListener {
         String guitaristSelection;
         guitaristSelection = e.getActionCommand();
 
-        if (menuSelection == "E Standard") {
+        if (menuSelection.equals("E Standard")) {
             userSelectedTuning = menuSelection;
             currentTuning.setText("Current Tuning: " + menuSelection);
         }
-        if (menuSelection == "D Standard") {
+        if (menuSelection.equals("D Standard")) {
             userSelectedTuning = menuSelection;
             currentTuning.setText("Current Tuning: " + menuSelection);
         }
-        if (menuSelection == "Drop C") {
+        if (menuSelection.equals("Drop C")) {
             userSelectedTuning = menuSelection;
             currentTuning.setText("Current Tuning: " + menuSelection);
         }
 
 
-        if (menuSelection == "Quit") {
+        if (menuSelection.equals("Quit")) {
             System.exit(0);
         }
 
-        if (guitaristSelection == "Guitarist Information") {
-            if (userGenre == "Metal") {
+        if (guitaristSelection.equals("Guitarist Information")){
+            if (userGenre.equals("Metal")) {
                 JOptionPane.showMessageDialog(null, "A great guitarist within the selected genre " + "'" + userGenre + "'" + " is: " + guitarists[0], "Guitarist Information", JOptionPane.INFORMATION_MESSAGE);
             }
-            if (userGenre == "Jazz") {
+            if (userGenre.equals("Jazz")) {
                 JOptionPane.showMessageDialog(null, "A great guitarist within the selected genre " + "'" + userGenre + "'" + " is: " + guitarists[1], "Guitarist Information", JOptionPane.INFORMATION_MESSAGE);
             }
-            if (userGenre == "Pop") {
+            if (userGenre.equals("Pop")) {
                 JOptionPane.showMessageDialog(null, "A great guitarist the selected genre " + "'" + userGenre + "'" + " is: " + guitarists[2], "Guitarist Information", JOptionPane.INFORMATION_MESSAGE);
             }
         }
-
+        if(guitaristSelection.equals("Guitarist Band")){
+            if (userGenre.equals("Metal")) {
+                JOptionPane.showMessageDialog(null, guitarists[0] + " is the lead guitarist for the band Bullet For My Valentine", "Guitarist Band", JOptionPane.INFORMATION_MESSAGE);
+            }
+            if (userGenre.equals("Jazz")) {
+                JOptionPane.showMessageDialog(null, guitarists[1] + " is the lead guitarist who plays guitar and sings by himself with a supporting band", "Guitarist Band", JOptionPane.INFORMATION_MESSAGE);
+            }
+            if (userGenre.equals("Pop")) {
+                JOptionPane.showMessageDialog(null, guitarists[2] + " is the lead guitarist for the band Maroon 5", "Guitarist Band", JOptionPane.INFORMATION_MESSAGE);
+            }
+        }
+        if(guitaristSelection.equals("Guitarist Songs")){
+            if (userGenre.equals("Metal")) {
+                JOptionPane.showMessageDialog(null, "Some of Bullet For My Valentine's songs are: \n\nWaking The Demon\nTears Don't Fall\nDeath By A Thousand Cuts" , "Guitarist Songs", JOptionPane.INFORMATION_MESSAGE);
+            }
+            if (userGenre.equals("Jazz")) {
+                JOptionPane.showMessageDialog(null, "Some of B.B. Kings's songs are: \n\nThe Thrill Is Gone\nRock Me Baby\n3 O' Clock Blues", "Guitarist Songs", JOptionPane.INFORMATION_MESSAGE);
+            }
+            if (userGenre.equals("Pop")) {
+                JOptionPane.showMessageDialog(null, "Some of Maroon 5's songs are: \n\nPayphone\nSugar\nMoves Like Jagger", "Guitarist Songs", JOptionPane.INFORMATION_MESSAGE);
+            }
+        }
 
 
     }

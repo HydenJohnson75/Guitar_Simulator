@@ -1,9 +1,9 @@
 package GuitarSimulatorProject;
 
 public class Guitar {
-    public String model;
-    public String genre;
-    public Notes notes;
+    private String model;
+    private String genre;
+    private Notes notes;
 
     public Guitar() {
 
