@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>GuitarSimulatorProject</OriginalElement>
+  <nodes>
+    <node x="3020.5" y="1441.142857142857">GuitarSimulatorProject.JavaSoundRecorder</node>
+    <node x="2651.1964285714284" y="3165.714285714286">GuitarSimulatorProject.StartWindowGUI</node>
+    <node x="1992.711021505376" y="-338.4999999999998">GuitarSimulatorProject.Notes</node>
+    <node x="3397.9285714285716" y="1441.142857142857">GuitarSimulatorProject.RandomRiffGUI</node>
+    <node x="2651.1964285714284" y="2245.4285714285716">GuitarSimulatorProject.GuitarGUI</node>
+    <node x="2192.625" y="3165.714285714286">GuitarSimulatorProject.GuitarSimulatorDriver</node>
+    <node x="2370.2142857142853" y="1441.142857142857">GuitarSimulatorProject.Guitar</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="GuitarSimulatorProject.GuitarGUI" target="GuitarSimulatorProject.JavaSoundRecorder" relationship="CREATE">
+      <point x="0.0" y="-403.0" />
+      <point x="2769.1964285714284" y="2145.0" />
+      <point x="342.991935483871" y="2145.0" />
+      <point x="342.991935483871" y="2125.0" />
+      <point x="3166.75" y="2125.0" />
+      <point x="48.75" y="161.5" />
+    </edge>
+    <edge source="GuitarSimulatorProject.GuitarGUI" target="GuitarSimulatorProject.Guitar" relationship="TO_ONE">
+      <point x="-78.66666666666669" y="-403.0" />
+      <point x="2690.529761904762" y="2145.0" />
+      <point x="79.37768817204298" y="2145.0" />
+      <point x="79.37768817204298" y="2135.0" />
+      <point x="2410.2142857142853" y="2135.0" />
+      <point x="-40.0" y="84.0" />
+    </edge>
+    <edge source="GuitarSimulatorProject.Guitar" target="GuitarSimulatorProject.Notes" relationship="DEPENDENCY">
+      <point x="40.0" y="-84.0" />
+      <point x="2490.2142857142853" y="1695.0" />
+      <point x="2110.7110215053763" y="1695.0" />
+      <point x="1.4210854715202004E-14" y="832.0" />
+    </edge>
+    <edge source="GuitarSimulatorProject.GuitarSimulatorDriver" target="GuitarSimulatorProject.StartWindowGUI" relationship="CREATE">
+      <point x="0.0" y="-39.5" />
+      <point x="2290.625" y="3259.0" />
+      <point x="2769.1964285714284" y="3259.0" />
+      <point x="0.0" y="106.0" />
+    </edge>
+    <edge source="GuitarSimulatorProject.RandomRiffGUI" target="GuitarSimulatorProject.GuitarGUI" relationship="DEPENDENCY">
+      <point x="65.0" y="194.0" />
+      <point x="3592.9285714285716" y="2145.0" />
+      <point x="2847.863095238095" y="2145.0" />
+      <point x="78.66666666666669" y="-403.0" />
+    </edge>
+    <edge source="GuitarSimulatorProject.Guitar" target="GuitarSimulatorProject.Notes" relationship="TO_ONE">
+      <point x="-40.0" y="-84.0" />
+      <point x="2410.2142857142853" y="1695.0" />
+      <point x="66.1572580645161" y="1695.0" />
+      <point x="66.1572580645161" y="1685.0" />
+      <point x="2032.0443548387095" y="1685.0" />
+      <point x="-78.66666666666667" y="832.0" />
+    </edge>
+    <edge source="GuitarSimulatorProject.GuitarGUI" target="GuitarSimulatorProject.Notes" relationship="CREATE">
+      <point x="0.0" y="-403.0" />
+      <point x="2769.1964285714284" y="2145.0" />
+      <point x="342.991935483871" y="2145.0" />
+      <point x="342.991935483871" y="2125.0" />
+      <point x="396.0" y="2125.0" />
+      <point x="396.0" y="1695.0" />
+      <point x="2189.377688172043" y="1695.0" />
+      <point x="78.66666666666669" y="832.0" />
+    </edge>
+    <edge source="GuitarSimulatorProject.StartWindowGUI" target="GuitarSimulatorProject.GuitarGUI" relationship="CREATE">
+      <point x="0.0" y="-106.0" />
+      <point x="2769.1964285714284" y="2997.0" />
+      <point x="2769.1964285714284" y="2997.0" />
+      <point x="0.0" y="403.0" />
+    </edge>
+    <edge source="GuitarSimulatorProject.GuitarGUI" target="GuitarSimulatorProject.Notes" relationship="TO_ONE">
+      <point x="-78.66666666666669" y="-403.0" />
+      <point x="2690.529761904762" y="2145.0" />
+      <point x="79.37768817204298" y="2145.0" />
+      <point x="79.37768817204298" y="2135.0" />
+      <point x="0.0" y="2135.0" />
+      <point x="0.0" y="1695.0" />
+      <point x="66.1572580645161" y="1695.0" />
+      <point x="66.1572580645161" y="1685.0" />
+      <point x="2032.0443548387095" y="1685.0" />
+      <point x="-78.66666666666667" y="832.0" />
+    </edge>
+    <edge source="GuitarSimulatorProject.GuitarGUI" target="GuitarSimulatorProject.RandomRiffGUI" relationship="CREATE">
+      <point x="0.0" y="-403.0" />
+      <point x="2769.1964285714284" y="2145.0" />
+      <point x="342.991935483871" y="2145.0" />
+      <point x="342.991935483871" y="2125.0" />
+      <point x="3462.9285714285716" y="2125.0" />
+      <point x="-65.0" y="194.0" />
+    </edge>
+    <edge source="GuitarSimulatorProject.GuitarGUI" target="GuitarSimulatorProject.JavaSoundRecorder" relationship="TO_ONE">
+      <point x="-78.66666666666669" y="-403.0" />
+      <point x="2690.529761904762" y="2145.0" />
+      <point x="79.37768817204298" y="2145.0" />
+      <point x="79.37768817204298" y="2135.0" />
+      <point x="3069.25" y="2135.0" />
+      <point x="-48.75" y="161.5" />
+    </edge>
+    <edge source="GuitarSimulatorProject.GuitarGUI" target="GuitarSimulatorProject.Guitar" relationship="CREATE">
+      <point x="0.0" y="-403.0" />
+      <point x="2769.1964285714284" y="2145.0" />
+      <point x="342.991935483871" y="2145.0" />
+      <point x="342.991935483871" y="2125.0" />
+      <point x="2490.2142857142853" y="2125.0" />
+      <point x="40.0" y="84.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.10000000000000003" showDependencies="true" x="2597.160569805732" y="2176.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

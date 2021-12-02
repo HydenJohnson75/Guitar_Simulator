@@ -1,5 +1,13 @@
 package GuitarSimulatorProject;
 
+//Notes.java
+
+/**
+ * An instantiable class which defines each of the 36 notes based on what the genre and tuning is
+ *
+ * @author Hyden Johnson
+ */
+
 public class Notes {
 
 
@@ -40,6 +48,13 @@ public class Notes {
     String audioFile35 = "";
     String audioFile36 = "";
 
+    /**
+     * Method to set the current tuning of the guitar
+     *
+     * @param tuning Users tuning
+     * @return a string that is decided based on the tuning parameter
+     */
+
     public static String setCurrentTuning(String tuning) {
         String str = "";
 
@@ -55,6 +70,14 @@ public class Notes {
 
         return str;
     }
+
+    /**
+     * Methods that set the audio file 1 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
 
     public static String setAudioFile1(String genre, String tuning) {
         String sound = "";
@@ -96,6 +119,14 @@ public class Notes {
         return sound;
     }
 
+    /**
+     * Methods that set the audio file 2 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
+
     public static String setAudioFile2(String genre, String tuning) {
         String sound = "";
 
@@ -136,6 +167,14 @@ public class Notes {
         return sound;
     }
 
+    /**
+     * Methods that set the audio file 3 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
+
     public static String setAudioFile3(String genre, String tuning) {
         String sound = "";
 
@@ -175,6 +214,14 @@ public class Notes {
 
         return sound;
     }
+
+    /**
+     * Methods that set the audio file 4 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
 
     public static String setAudioFile4(String genre, String tuning) {
         String sound = "";
@@ -217,6 +264,14 @@ public class Notes {
         return sound;
     }
 
+    /**
+     * Methods that set the audio file 5 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
+
     public static String setAudioFile5(String genre, String tuning) {
         String sound = "";
 
@@ -256,6 +311,14 @@ public class Notes {
 
         return sound;
     }
+
+    /**
+     * Methods that set the audio file 6 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
 
     public static String setAudioFile6(String genre, String tuning) {
         String sound = "";
@@ -297,6 +360,14 @@ public class Notes {
         return sound;
     }
 
+    /**
+     * Methods that set the audio file 7 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
+
     public static String setAudioFile7(String genre, String tuning) {
         String sound = "";
 
@@ -336,6 +407,14 @@ public class Notes {
 
         return sound;
     }
+
+    /**
+     * Methods that set the audio file 8 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
 
     public static String setAudioFile8(String genre, String tuning) {
         String sound = "";
@@ -377,6 +456,14 @@ public class Notes {
         return sound;
     }
 
+    /**
+     * Methods that set the audio file 9 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
+
     public static String setAudioFile9(String genre, String tuning) {
         String sound = "";
 
@@ -416,6 +503,14 @@ public class Notes {
 
         return sound;
     }
+
+    /**
+     * Methods that set the audio file 10 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
 
     public static String setAudioFile10(String genre, String tuning) {
         String sound = "";
@@ -457,6 +552,14 @@ public class Notes {
         return sound;
     }
 
+    /**
+     * Methods that set the audio file 11 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
+
     public static String setAudioFile11(String genre, String tuning) {
         String sound = "";
 
@@ -496,6 +599,14 @@ public class Notes {
 
         return sound;
     }
+
+    /**
+     * Methods that set the audio file 12 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
 
     public static String setAudioFile12(String genre, String tuning) {
         String sound = "";
@@ -537,6 +648,14 @@ public class Notes {
         return sound;
     }
 
+    /**
+     * Methods that set the audio file 13 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
+
     public static String setAudioFile13(String genre, String tuning) {
         String sound = "";
 
@@ -577,6 +696,14 @@ public class Notes {
         return sound;
     }
 
+    /**
+     * Methods that set the audio file 14 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
+
     public static String setAudioFile14(String genre, String tuning) {
         String sound = "";
 
@@ -616,6 +743,14 @@ public class Notes {
 
         return sound;
     }
+
+    /**
+     * Methods that set the audio file 15 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
 
     public static String setAudioFile15(String genre, String tuning) {
         String sound = "";
@@ -658,6 +793,14 @@ public class Notes {
         return sound;
     }
 
+    /**
+     * Methods that set the audio file 16 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
+
     public static String setAudioFile16(String genre, String tuning) {
         String sound = "";
 
@@ -697,6 +840,14 @@ public class Notes {
 
         return sound;
     }
+
+    /**
+     * Methods that set the audio file 17 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
 
     public static String setAudioFile17(String genre, String tuning) {
         String sound = "";
@@ -738,6 +889,14 @@ public class Notes {
         return sound;
     }
 
+    /**
+     * Methods that set the audio file 18 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
+
     public static String setAudioFile18(String genre, String tuning) {
         String sound = "";
 
@@ -777,6 +936,14 @@ public class Notes {
 
         return sound;
     }
+
+    /**
+     * Methods that set the audio file 19 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
 
     public static String setAudioFile19(String genre, String tuning) {
         String sound = "";
@@ -818,6 +985,14 @@ public class Notes {
         return sound;
     }
 
+    /**
+     * Methods that set the audio file 20 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
+
     public static String setAudioFile20(String genre, String tuning) {
         String sound = "";
 
@@ -857,6 +1032,14 @@ public class Notes {
 
         return sound;
     }
+
+    /**
+     * Methods that set the audio file 21 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
 
     public static String setAudioFile21(String genre, String tuning) {
         String sound = "";
@@ -898,6 +1081,14 @@ public class Notes {
         return sound;
     }
 
+    /**
+     * Methods that set the audio file 22 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
+
     public static String setAudioFile22(String genre, String tuning) {
         String sound = "";
 
@@ -937,6 +1128,14 @@ public class Notes {
 
         return sound;
     }
+
+    /**
+     * Methods that set the audio file 23 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
 
     public static String setAudioFile23(String genre, String tuning) {
         String sound = "";
@@ -978,6 +1177,14 @@ public class Notes {
         return sound;
     }
 
+    /**
+     * Methods that set the audio file 24 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
+
     public static String setAudioFile24(String genre, String tuning) {
         String sound = "";
 
@@ -1017,6 +1224,14 @@ public class Notes {
 
         return sound;
     }
+
+    /**
+     * Methods that set the audio file 25 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
 
     public static String setAudioFile25(String genre, String tuning) {
         String sound = "";
@@ -1058,6 +1273,14 @@ public class Notes {
         return sound;
     }
 
+    /**
+     * Methods that set the audio file 26 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
+
     public static String setAudioFile26(String genre, String tuning) {
         String sound = "";
 
@@ -1097,6 +1320,14 @@ public class Notes {
 
         return sound;
     }
+
+    /**
+     * Methods that set the audio file 27 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
 
     public static String setAudioFile27(String genre, String tuning) {
         String sound = "";
@@ -1138,6 +1369,14 @@ public class Notes {
         return sound;
     }
 
+    /**
+     * Methods that set the audio file 28 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
+
     public static String setAudioFile28(String genre, String tuning) {
         String sound = "";
 
@@ -1177,6 +1416,14 @@ public class Notes {
 
         return sound;
     }
+
+    /**
+     * Methods that set the audio file 29 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
 
     public static String setAudioFile29(String genre, String tuning) {
         String sound = "";
@@ -1218,6 +1465,14 @@ public class Notes {
         return sound;
     }
 
+    /**
+     * Methods that set the audio file 30 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
+
     public static String setAudioFile30(String genre, String tuning) {
         String sound = "";
 
@@ -1257,6 +1512,14 @@ public class Notes {
 
         return sound;
     }
+
+    /**
+     * Methods that set the audio file 31 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
 
     public static String setAudioFile31(String genre, String tuning) {
         String sound = "";
@@ -1298,6 +1561,14 @@ public class Notes {
         return sound;
     }
 
+    /**
+     * Methods that set the audio file 32 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
+
     public static String setAudioFile32(String genre, String tuning) {
         String sound = "";
 
@@ -1337,6 +1608,14 @@ public class Notes {
 
         return sound;
     }
+
+    /**
+     * Methods that set the audio file 33 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
 
     public static String setAudioFile33(String genre, String tuning) {
         String sound = "";
@@ -1378,6 +1657,14 @@ public class Notes {
         return sound;
     }
 
+    /**
+     * Methods that set the audio file 34 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
+
     public static String setAudioFile34(String genre, String tuning) {
         String sound = "";
 
@@ -1418,6 +1705,14 @@ public class Notes {
         return sound;
     }
 
+    /**
+     * Methods that set the audio file 35 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
+
     public static String setAudioFile35(String genre, String tuning) {
         String sound = "";
 
@@ -1457,6 +1752,14 @@ public class Notes {
 
         return sound;
     }
+
+    /**
+     * Methods that set the audio file 36 based on the genre and tuning parameters
+     *
+     * @param genre  Users genre
+     * @param tuning Users tuning
+     * @return a string that sets the path of the audio file to play
+     */
 
     public static String setAudioFile36(String genre, String tuning) {
         String sound = "";

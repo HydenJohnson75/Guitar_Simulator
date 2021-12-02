@@ -51,9 +51,23 @@ public class JavaSoundRecorder implements Runnable {
         recorder.start();
     }
 
+    /**
+     * Method to detect if the application is recording
+     *
+     * @return a static boolean based on if a line in is supported or not
+     */
+
+    public static boolean checkIfRecording() {
+        boolean getCheck = check;
+
+        return getCheck;
+    }
+
     //JB added code to place this sound recorder object into it's own thread of execution
     //so that it wouldn't interfere with the execution of the GUI thread
     public void start() {
+
+        check = true;
 
         thread = new Thread(this);
 
@@ -105,15 +119,13 @@ public class JavaSoundRecorder implements Runnable {
             // start recording
             AudioSystem.write(ais, fileType, wavFile);
 
-            check = true;
 
         } catch (LineUnavailableException ex) {
             ex.printStackTrace();
         } catch (IOException ioe) {
             ioe.printStackTrace();
-        }
-        catch(Exception IllegalArgumentException){
-            JOptionPane.showMessageDialog(null,"No Input device found");
+        } catch (Exception IllegalArgumentException) {
+            JOptionPane.showMessageDialog(null, "No Input device found/ Line not supported");
             check = false;
             this.finish();
         }
@@ -124,17 +136,11 @@ public class JavaSoundRecorder implements Runnable {
      * Closes the target data line to finish capturing and recording
      */
     void finish() {
-        if(line != null){
+        if (line != null) {
             line.stop();
             line.close();
             System.out.println("Finished");
         }
 
-    }
-
-    public static boolean checkIfRecording(){
-        boolean getCheck = check;
-
-        return getCheck;
     }
 }

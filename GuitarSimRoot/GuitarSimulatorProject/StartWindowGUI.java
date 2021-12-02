@@ -12,6 +12,13 @@ public class StartWindowGUI extends JFrame implements ActionListener {
     private String userGenre;
     private String userTuning;
 
+    /**
+     * An instantiable class to generate the start-up window GUI to decided the genre of the guitar
+     * and set the tuning for the guitar at the start
+     *
+     * @author Hyden Johnson
+     */
+
     public StartWindowGUI() {
 
         super("Welcome Page");
@@ -72,6 +79,10 @@ public class StartWindowGUI extends JFrame implements ActionListener {
         setVisible(true);
     }
 
+    /**
+     * Method to create a combo box which lets the user select their genre from a selection of 3 genres
+     */
+
     public void createGenreComboBox() {
 
         String[] genres = new String[3];
@@ -88,6 +99,10 @@ public class StartWindowGUI extends JFrame implements ActionListener {
         genreComboBox.setSelectedIndex(0);
     }
 
+    /**
+     * Method to create a combo box which lets the user select their tuning from a selection of 3 tunings
+     */
+
     public void createTuningComboBox() {
 
         String[] tunings = new String[3];
@@ -103,6 +118,13 @@ public class StartWindowGUI extends JFrame implements ActionListener {
 
         tuningComboBox.setSelectedIndex(0);
     }
+
+    /**
+     * Method to listen for an action preformed on the start button to initialize the genre and tuning
+     * and instantiate the main GUI
+     *
+     * @param e Action Event
+     */
 
     @Override
     public void actionPerformed(ActionEvent e) {

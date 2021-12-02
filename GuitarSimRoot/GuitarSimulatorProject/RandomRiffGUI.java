@@ -21,6 +21,14 @@ public class RandomRiffGUI extends JFrame implements WindowListener, ActionListe
     private final JLabel dateInfo;
     private final Font textFont = new Font("Helvetica", Font.BOLD, 15);
 
+    /**
+     * An instantiable class to generate a GUI on the main GUI to play a random riff from a song
+     * from a selection of 3 based on the users genre
+     *
+     * @param genre Users genre
+     * @author Hyden Johnson
+     */
+
     public RandomRiffGUI(String genre) {
         super("Random Riff");
 
@@ -66,6 +74,13 @@ public class RandomRiffGUI extends JFrame implements WindowListener, ActionListe
 
         chooseRandomRiff(genre);
     }
+
+    /**
+     * Method to select a random riff based on the users genre from a random number generator
+     * between 1 and 3 inclusive and plays the riff
+     *
+     * @param genre Users genre
+     */
 
     public void chooseRandomRiff(String genre) {
         int selection = (int) (Math.random() * (4 - 1) + 1);
@@ -134,39 +149,88 @@ public class RandomRiffGUI extends JFrame implements WindowListener, ActionListe
     }
 
 
+    /**
+     * Method to listen if the window is opened
+     *
+     * @param e Window Event
+     */
+
     @Override
     public void windowOpened(WindowEvent e) {
     }
+
+    /**
+     * Method to listen if the window is closing and stops the media player
+     *
+     * @param e Window Event
+     */
 
     @Override
     public void windowClosing(WindowEvent e) {
         mediaPlayer.stop();
     }
 
+    /**
+     * Method to listen if the window is closed and destroys the currently open Random Riff GUI
+     *
+     * @param e Window Event
+     */
+
     @Override
     public void windowClosed(WindowEvent e) {
         dispose();
     }
+
+    /**
+     * Method to listen if the window is iconified
+     *
+     * @param e Window Event
+     */
 
     @Override
     public void windowIconified(WindowEvent e) {
 
     }
 
+    /**
+     * Method to listen if the window is deiconified
+     *
+     * @param e Window Event
+     */
+
     @Override
     public void windowDeiconified(WindowEvent e) {
 
     }
+
+    /**
+     * Method to listen if the window is activated
+     *
+     * @param e Window Event
+     */
 
     @Override
     public void windowActivated(WindowEvent e) {
 
     }
 
+    /**
+     * Method to listen if the window is deactivated
+     *
+     * @param e Window Event
+     */
+
     @Override
     public void windowDeactivated(WindowEvent e) {
 
     }
+
+    /**
+     * Method to listen for an action performed and stops or plays the song based on the action
+     * performed
+     *
+     * @param e Action Event
+     */
 
     @Override
     public void actionPerformed(ActionEvent e) {
