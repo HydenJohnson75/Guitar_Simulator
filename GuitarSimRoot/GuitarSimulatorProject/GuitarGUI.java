@@ -14,7 +14,7 @@ import java.awt.event.MouseListener;
 import java.io.File;
 
 
-public class GUI extends JFrame implements ActionListener, MouseListener {
+public class GuitarGUI extends JFrame implements ActionListener, MouseListener {
 
     protected static MediaPlayer mediaPlayer;
     final JavaSoundRecorder recorder = new JavaSoundRecorder();
@@ -44,7 +44,7 @@ public class GUI extends JFrame implements ActionListener, MouseListener {
     private Guitar[] allGuitars;
 
 
-    public GUI(String genre, String tuning) {
+    public GuitarGUI(String genre, String tuning) {
 
         super("Guitar Simulator");
 
@@ -340,12 +340,7 @@ public class GUI extends JFrame implements ActionListener, MouseListener {
                     //creation of the guitar GUI and lasts for 60 seconds - it is using a modified version
                     //of the "JavaSoundRecorder.java" demo.
 
-                    //If you get the time, see if you can integrate a "start" and "stop" button for recording
-                    //into the system as per the "SimpleSoundCapture.java" demo
-
-                    //
-
-                    // creates a new thread that waits for a specified
+                    // creates a new thread that waits for a specified amount
                     // of time before stopping
 
                     Thread stopper = new Thread(new Runnable() {
@@ -364,9 +359,15 @@ public class GUI extends JFrame implements ActionListener, MouseListener {
                     // start recording
                     recorder.start();
 
-                    stopButton.setVisible(true);
-                    recordButton.setVisible(false);
+                    //JB Code finish here
+
+                    if(JavaSoundRecorder.checkIfRecording() == true){
+                        stopButton.setVisible(true);
+                        recordButton.setVisible(false);
+                    }
+
                 }
+
 
 
             } catch (Exception NullPointerException) {

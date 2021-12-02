@@ -5,14 +5,14 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class StartWindow extends JFrame implements ActionListener {
+public class StartWindowGUI extends JFrame implements ActionListener {
 
     private JComboBox genreComboBox;
     private JComboBox tuningComboBox;
     private String userGenre;
     private String userTuning;
 
-    public StartWindow() {
+    public StartWindowGUI() {
 
         super("Welcome Page");
         BorderLayout layout = new BorderLayout();
@@ -112,6 +112,6 @@ public class StartWindow extends JFrame implements ActionListener {
         userTuning = tuningComboBox.getSelectedItem().toString();
         System.out.println(userTuning);
         dispose();
-        GUI gui = new GUI(userGenre, userTuning);
+        GuitarGUI guitarGui = new GuitarGUI(userGenre, userTuning);
     }
 }

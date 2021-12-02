@@ -1,6 +1,7 @@
 package GuitarSimulatorProject;
 
 import javax.sound.sampled.*;
+import javax.swing.*;
 import java.io.File;
 import java.io.IOException;
 
@@ -12,6 +13,7 @@ public class JavaSoundRecorder implements Runnable {
     // record duration, in milliseconds
     static final long RECORD_TIME = 60000;  // 1 minute
 
+    protected static boolean check;
 
     Thread thread;
 
@@ -89,7 +91,6 @@ public class JavaSoundRecorder implements Runnable {
             // checks if system supports the data line
             if (!AudioSystem.isLineSupported(info)) {
                 System.out.println("Line not supported");
-                System.exit(0);
             }
             line = (TargetDataLine) AudioSystem.getLine(info);
             line.open(format);
@@ -104,19 +105,36 @@ public class JavaSoundRecorder implements Runnable {
             // start recording
             AudioSystem.write(ais, fileType, wavFile);
 
+            check = true;
+
         } catch (LineUnavailableException ex) {
             ex.printStackTrace();
         } catch (IOException ioe) {
             ioe.printStackTrace();
         }
+        catch(Exception IllegalArgumentException){
+            JOptionPane.showMessageDialog(null,"No Input device found");
+            check = false;
+            this.finish();
+        }
+
     }
 
     /**
      * Closes the target data line to finish capturing and recording
      */
     void finish() {
-        line.stop();
-        line.close();
-        System.out.println("Finished");
+        if(line != null){
+            line.stop();
+            line.close();
+            System.out.println("Finished");
+        }
+
+    }
+
+    public static boolean checkIfRecording(){
+        boolean getCheck = check;
+
+        return getCheck;
     }
 }

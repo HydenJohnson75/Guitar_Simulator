@@ -7,8 +7,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
-import static GuitarSimulatorProject.GUI.mediaPlayer;
-import static GuitarSimulatorProject.GUI.playAudio;
+import static GuitarSimulatorProject.GuitarGUI.mediaPlayer;
+import static GuitarSimulatorProject.GuitarGUI.playAudio;
 
 
 public class RandomRiffGUI extends JFrame implements WindowListener, ActionListener {
@@ -113,7 +113,7 @@ public class RandomRiffGUI extends JFrame implements WindowListener, ActionListe
         if (genre.equals("Pop")) {
             if (selection == 1) {
                 playAudio("RecordedSongs/Pop/Dont_Stop_Beliving.mp3");
-                songInfo.setText("Song: Don\'t Stop Believin' ");
+                songInfo.setText("Song: Don't Stop Believin' ");
                 bandInfo.setText("Band: Journey");
                 dateInfo.setText("Release Year: 1975");
             }
