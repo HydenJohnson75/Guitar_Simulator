@@ -40,6 +40,7 @@ public class JavaSoundRecorder implements Runnable {
                     Thread.sleep(RECORD_TIME);
                 } catch (InterruptedException ex) {
                     ex.printStackTrace();
+                    check = false;
                 }
                 recorder.finish();
             }
@@ -61,17 +62,18 @@ public class JavaSoundRecorder implements Runnable {
         boolean getCheck = check;
 
         return getCheck;
+
     }
 
     //JB added code to place this sound recorder object into it's own thread of execution
     //so that it wouldn't interfere with the execution of the GUI thread
     public void start() {
 
-        check = true;
-
         thread = new Thread(this);
 
         thread.start();
+
+
     }
 
     /**
@@ -119,11 +121,14 @@ public class JavaSoundRecorder implements Runnable {
             // start recording
             AudioSystem.write(ais, fileType, wavFile);
 
+            check = true;
 
         } catch (LineUnavailableException ex) {
             ex.printStackTrace();
+            check = false;
         } catch (IOException ioe) {
             ioe.printStackTrace();
+            check = false;
         } catch (Exception IllegalArgumentException) {
             JOptionPane.showMessageDialog(null, "No Input device found/ Line not supported");
             check = false;
